@@ -19,7 +19,6 @@ public class UserResource {
      */
     @RequestMapping(method = RequestMethod.GET, path = "/user/{Id}")
     public User getUser(@PathVariable Integer Id) {
-
         return userResourceImplementation.getSpecificUser(Id);
     }
 
@@ -37,7 +36,6 @@ public class UserResource {
      */
     @RequestMapping(method = RequestMethod.POST, path = "/user")
     public User createNewUser(@RequestBody User user) {
-
         return userResourceImplementation.registerNewUser(user);
     }
 

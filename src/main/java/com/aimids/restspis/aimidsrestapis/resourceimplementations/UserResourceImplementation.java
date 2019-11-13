@@ -14,7 +14,6 @@ public class UserResourceImplementation {
     @Autowired
     UserDaoService userDaoService;
 
-
     public User getSpecificUser(Integer Id) {
         return userDaoService.getUser(Id);
     }
